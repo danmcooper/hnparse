@@ -1,28 +1,28 @@
 <html>
 <head>
-	<title>Hacker News RSS Parse Demo</title>
-	<link rel="stylesheet" type="text/css" href="/css/app.css"></link>
+    <title>Hacker News RSS Parse Demo</title>
+    <link rel="stylesheet" type="text/css" href="/css/app.css"></link>
 </head>
 <body>
-	<div id="hacker-news"></div>
-	<script id="hn-template" type="text/x-handlebars-template">
-		{{#with rss}}
-		{{#each channel}}
-			<h1>
-				<a href="{{link}}">{{title}}</a>
-			</h1>
-			<h2>{{description}}</h2>
-			{{#each item}}
-				<div class="hn-item">
-					<a class="hn-item-title" target="_blank" href="{{link}}">{{title}}</a>
-					<a class="hn-item-comments" target="_blank" href="{{comments}}">Comments</a>
-				</div>
-			{{/each}}
-		{{/each}}			
-		{{/with}}
-	</script>
-	<script src="/js/handlebars.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>	
-	<script src="/js/app.js" type="text/javascript"></script>
+    <div id="hacker-news"></div>
+    <script id="hn-template" type="text/x-handlebars-template">
+        {{#with rss}}
+        {{#each channel}}
+            <h1>
+                <a href="{{link}}">{{title}}</a>
+            </h1>
+            <h2>{{description}}</h2>
+            {{#each item}}
+                <div class="hn-item">
+                    <a class="hn-item-title" target="_blank" href="{{link}}">{{title}}</a>
+                    <a class="hn-item-comments" target="_blank" href="{{comments}}">Comments</a>
+                </div>
+            {{/each}}
+        {{/each}}           
+        {{/with}}
+    </script>
+    <script src="/js/handlebars.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> 
+    <script src="/js/app.js" type="text/javascript"></script>
 </body>
 </html

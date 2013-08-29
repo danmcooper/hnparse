@@ -1,15 +1,15 @@
 .hn-item {
-	margin: 5px;
+    margin: 5px;
 }
 
 .hn-item a {
-	margin: 5px;
+    margin: 5px;
 }
 
 .hn-item-title {
-	color: orange;
+    color: orange;
 }
 
 .hn-item-comments {
-	color: purple;
+    color: purple;
 }

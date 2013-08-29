@@ -17,7 +17,7 @@ var parse = function(callback) {
 };
 
 var changeUrl = function(newUrl) {
-	url = newUrl;
+    url = newUrl;
 };
 
 module.exports.parse = parse;
